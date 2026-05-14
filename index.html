@@ -170,7 +170,7 @@
   }
 
   /* ── DEVICES ── */
-  .devices-section { background: var(--bg2); }
+  .devices-section { background: #151920; }
   .device-layout {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -366,7 +366,7 @@
   }
 
   /* ── PIPELINE ── */
-  .pipeline-section { background: var(--bg2); }
+  .pipeline-section { background: #151920; }
   .pipeline {
     display: flex;
     align-items: center;
@@ -430,7 +430,7 @@
   svg text { font-family: var(--sans) !important; }
 
   /* ── SPECS TABLE ── */
-  .specs-section { background: var(--bg2); }
+  .specs-section { background: #151920; }
   .specs-table {
     width: 100%;
     border-collapse: collapse;
@@ -649,6 +649,35 @@
     100% { box-shadow: 0 0 0 0 rgba(255,255,255,0), 0 2px 12px rgba(0,0,0,0.5); }
   }
   .hotspot-ring { animation: pulse 2.5s ease-out 1s 2; }
+
+  /* SVG diagram classes (standalone) */
+  svg .t  { fill: #e8eaf0; font-size: 14px; font-family: 'DM Sans', sans-serif; }
+  svg .ts { fill: #8a9ab8; font-size: 12px; font-family: 'DM Sans', sans-serif; }
+  svg .th { fill: #e8eaf0; font-size: 14px; font-weight: 500; font-family: 'DM Sans', sans-serif; }
+  svg .box { fill: #1a1f28; stroke: rgba(255,255,255,0.07); }
+  svg .arr { fill: none; stroke: #5a6a88; stroke-width: 1.5; }
+  svg .leader { fill: none; stroke: #5a6a88; stroke-width: 0.5; stroke-dasharray: 4 3; }
+  svg .node { cursor: pointer; }
+  svg .node:hover { opacity: 0.8; }
+  /* Color ramp classes */
+  svg .c-blue   rect, svg .c-blue   circle, svg .c-blue   ellipse { fill: #E6F1FB; stroke: #B5D4F4; }
+  svg .c-blue   .t, svg .c-blue   .ts, svg .c-blue   .th { fill: #0C447C; }
+  svg .c-teal   rect, svg .c-teal   circle, svg .c-teal   ellipse { fill: #E1F5EE; stroke: #9FE1CB; }
+  svg .c-teal   .t, svg .c-teal   .ts, svg .c-teal   .th { fill: #085041; }
+  svg .c-amber  rect, svg .c-amber  circle, svg .c-amber  ellipse { fill: #FAEEDA; stroke: #FAC775; }
+  svg .c-amber  .t, svg .c-amber  .ts, svg .c-amber  .th { fill: #633806; }
+  svg .c-purple rect, svg .c-purple circle, svg .c-purple ellipse { fill: #EEEDFE; stroke: #CECBF6; }
+  svg .c-purple .t, svg .c-purple .ts, svg .c-purple .th { fill: #26215C; }
+  svg .c-coral  rect, svg .c-coral  circle, svg .c-coral  ellipse { fill: #FAECE7; stroke: #F5C4B3; }
+  svg .c-coral  .t, svg .c-coral  .ts, svg .c-coral  .th { fill: #4A1B0C; }
+  svg .c-gray   rect, svg .c-gray   circle, svg .c-gray   ellipse { fill: #F1EFE8; stroke: #D3D1C7; }
+  svg .c-gray   .t, svg .c-gray   .ts, svg .c-gray   .th { fill: #2C2C2A; }
+  svg .c-green  rect, svg .c-green  circle, svg .c-green  ellipse { fill: #EAF3DE; stroke: #C0DD97; }
+  svg .c-green  .t, svg .c-green  .ts, svg .c-green  .th { fill: #173404; }
+  svg .c-red    rect, svg .c-red    circle, svg .c-red    ellipse { fill: #FCEBEB; stroke: #F7C1C1; }
+  svg .c-red    .t, svg .c-red    .ts, svg .c-red    .th { fill: #501313; }
+  svg .c-pink   rect, svg .c-pink   circle, svg .c-pink   ellipse { fill: #FBEAF0; stroke: #F4C0D1; }
+  svg .c-pink   .t, svg .c-pink   .ts, svg .c-pink   .th { fill: #4B1528; }
 </style>
 </head>
 <body>
